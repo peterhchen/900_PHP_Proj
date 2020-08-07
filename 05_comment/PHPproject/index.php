@@ -7,6 +7,10 @@
 </head>
 
 <body>
+<form method="GET">
+    <input type = "text" name="person">
+    <button>SUBMIT</button>
+</form>   
 <?php
     if (empty($_GET['person'])) {
         $name = "";
@@ -14,6 +18,11 @@
         $name = $_GET['person'];
     }
     echo "name: " . $name;
+    // one line comment
+    /* 
+        multiple lines of comment.
+        some other lines.
+    */
 ?>
 </body>
 </html>
